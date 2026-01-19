@@ -26,10 +26,45 @@
         - Push to GitHub repo.
         - Add the collaborators.
 
+        - merger(main) will do the following steps:
+            >> Featch the changes from the collaborator branch.
+                - git fetch
+
+            >> Switch to main branch if not on main branch.
+                - git switch main
+
+            >> Merge the collaborator branch to main branch.
+                - git merge collaborator_branch_name
+
+            >> Push the changes to GitHub main repo.
+                - git push origin main    
+
+            >> Review the pull request.
+            >> Test the changes locally.
+            >> Merge the changes to the main branch.
+            >> Delete the feature branch after merging (optional).
+
     ## Second step of collaborators (Krinsha Wankhede and Suresh Halkude)
         - Fork or copy the repo to their GitHub account.
         - Create a new branch.
+            >> git switch -c feature/addignorefile (this is an example)
+            >> to check the current branch use: git branch 
+            >> to switch branch use: git switch branch_name
         - Make changes in their local system.
+            - Add the changed files.
+                >> git add file_name or git add . (to add all changed files)
+            - Commit the changes with a message.
+                >> git commit -m "Add a meaningful commit message"
+            - push the changes to their GitHub repo.
+                >> git push -u origin collaborator_branch_name        
         - Commit and push the changes to their GitHub repo.
         - Inform to admin or Create a pull request to the main repo.
         - Wait for review and merge by the admin.    
+
+        >> Once the code is merged by admin, collaborators need to sync their local repo with main repo.
+            - git fetch
+            - git switch main
+            ------ git merge origin/main <= This is optional step. No need to merge here. We can directly pull.
+            - git pull or git pull origin main <<- No need to to merge. pull means merge and fetch both in one command.
+            - git switch collaborator_branch_name <- if they want to continue working on their branch.
+            - git merge main <- to sync their branch with main branch.
