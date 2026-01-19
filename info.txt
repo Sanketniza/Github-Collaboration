@@ -25,3 +25,11 @@
         - Create folder and initial files.
         - Push to GitHub repo.
         - Add the collaborators.
+
+    ## Second step of collaborators (Krinsha Wankhede and Suresh Halkude)
+        - Fork or copy the repo to their GitHub account.
+        - Create a new branch.
+        - Make changes in their local system.
+        - Commit and push the changes to their GitHub repo.
+        - Inform to admin or Create a pull request to the main repo.
+        - Wait for review and merge by the admin.    
