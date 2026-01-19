@@ -94,3 +94,29 @@ To bring the latest main changes into your feature/adding-signIn-page branch, do
     5> If you prefer a cleaner history (optional, rewrites commits):
         - git rebase origin/main
         - then push with: git push --force-with-lease origin feature/adding-signIn-page
+
+--  ---------------------------------------------------------------------------------------
+
+    Do this to bring feature/adding-signIn-page changes into main, then push main to GitHub:
+
+    1> Update your local refs
+        - git fetch origin
+
+    2> Switch to main and make sure it’s up to date
+        - git checkout main <- or git switch main <- this is for
+        - git pull origin main 
+
+    3> Merge the feature branch into main
+        - git merge origin/feature/adding-signIn-page
+
+    4> Push updated main to GitHub
+        - git push origin main
+
+    6> If you get merge conflicts in step 3:
+        open the conflicted files, fix them
+            - git add .
+            - git commit (Git will suggest a merge commit message)
+            - git push origin main
+
+    7> Optionally, delete the feature branch if no longer needed
+        - git branch -d feature/adding-signIn-page <- deletes local branch
