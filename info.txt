@@ -1,0 +1,27 @@
+
+
+## This repo is for collaboration on GitHub.
+## Feel free to fork and make contributions!
+
+  ## I am the main maintainer of this repo.
+  - I will review and merge pull requests.
+  - Please ensure your code follows the project's coding standards.
+
+    ## To contribute:
+    1. Fork the repository.
+    2. Create a new branch for your feature or bug fix.
+    3. Make your changes and commit them with clear messages.
+    4. Push your changes to your forked repository.
+    5. Open a pull request to the main repository.
+    6. Wait for review and address any feedback.
+    ## Thank you for contributing!
+
+    ## collaborators:
+        - Sanket Talekar. (Main Maintainer or admin)
+        - Krinsha Wankhede.
+        - Suresh Halkude.
+
+    ## FIrst step of admin (me: Sanket Talekar) 
+        - Create folder and initial files.
+        - Push to GitHub repo.
+        - Add the collaborators.
