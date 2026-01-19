@@ -68,3 +68,6 @@
             - git pull or git pull origin main <<- No need to to merge. pull means merge and fetch both in one command.
             - git switch collaborator_branch_name <- if they want to continue working on their branch.
             - git merge main <- to sync their branch with main branch.
+
+
+-----------------------------------------------------------------------------------------            
