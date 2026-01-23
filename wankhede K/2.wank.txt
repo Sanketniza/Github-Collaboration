@@ -1,0 +1,15 @@
+Hello, Developer! 👋
+
+Welcome to this repository! We're excited to have you here.
+
+This is a collaborative space where we build great software together. Whether you're fixing bugs, adding features, or improving documentation, your contributions are valuable.
+
+Please take a moment to:
+- Read the README for project overview
+- Check CONTRIBUTING.md for guidelines
+- Review existing issues and pull requests
+- Follow the code style and conventions
+
+If you have questions, feel free to open an issue or reach out to the maintainers.
+
+Happy coding! 🚀
