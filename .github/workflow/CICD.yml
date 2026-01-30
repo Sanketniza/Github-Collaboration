@@ -1,0 +1,46 @@
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  display:
+    run-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          user_name: github-actions[bot]
+
+          script: |
+            cd/
+            git pull
+            docker compose up -d --build
+            docker run --rm -v $(pwd)/public:/usr/share/nginx/html mysite
+
+
+          commit_message: Deploy to GitHub Pages
+          keep_files: false
+          force_orphan: true
+          clean: true
+          enable_jekyll: false
+          cname: your-custom-domain.com
+          allow_empty_commit: false
+          destination_dir: ''
+          fqdn: your-custom-domain.com
+          single_commit: false
+          tag_name: ''
+          commit_email: github-actions[bot]@users.noreply.github.com  
+          ssh_key: ''
+          ssh_known_hosts: ''
+          external_repository: ''
+          external_branch: ''        
